@@ -1,6 +1,5 @@
 ---
-type: Checklist
-modified: 2021-06-16T01:47:00+03:00
+modified: 2021-06-16T01:49:55+03:00
 ---
 
 # &nbsp;&nbsp;Python

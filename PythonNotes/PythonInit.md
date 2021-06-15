@@ -1,4 +1,10 @@
-#  &nbsp;&nbsp;Python
+---
+type: Checklist
+modified: 2021-06-16T01:47:00+03:00
+---
+
+# &nbsp;&nbsp;Python
+
 ##  &nbsp;Important features
 | Features | Benefit |
 | ------ | ----------- |

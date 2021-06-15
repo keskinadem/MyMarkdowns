@@ -1,2 +1,2 @@
 # MyMarkdowns
-Here ıs my study notes
+Here is my study notes

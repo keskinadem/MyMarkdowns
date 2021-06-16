@@ -1,5 +1,5 @@
-#  &nbsp;&nbsp;Python
-##  &nbsp;Important features
+# Python
+## Important features
 | Features | Benefit |
 | ------ | ----------- |
 | no compiling or linking   | rapid development cycle |

@@ -1,9 +1,4 @@
----
-modified: 2021-06-16T01:49:55+03:00
----
-
-# &nbsp;&nbsp;Python
-
+#  &nbsp;&nbsp;Python
 ##  &nbsp;Important features
 | Features | Benefit |
 | ------ | ----------- |
@@ -16,5 +11,13 @@ operations   | fast development |
 | embedding and extending in C   | mixed language systems |
 | classes, modules, exceptions   | "programming-in-the-large" support |
 | dynamic loading of C modules   | simplified extensions, smaller binaries |
-| dynamic reloading of C modules   | programs can be modified without 
-stopping |
+| dynamic reloading of C modules   | programs can be modified without stopping |
+   
+Syntax highlighting
+
+``` js
+name = "Michael Douglas Jr."
+length = len(name)
+big_name = str.upper(name)
+print (big_name, "has", length, "characters”)
+```

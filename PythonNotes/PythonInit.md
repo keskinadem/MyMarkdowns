@@ -1,4 +1,9 @@
+---
+modified: 2021-06-18T18:08:16+03:00
+---
+
 # Python
+
 ## Important features
 | Features | Benefit |
 | ------ | ----------- |
@@ -19,7 +24,9 @@ program into a form that the machine understands.
 Python is instead directly interpreted into machine instructions.
 
 ## Math commands
+
 >  Some built-in commands to perform scientific calculations:
+
 >>  To use many of these commands, you must write the following at the top 
 of your Python program:  
 **from math import***

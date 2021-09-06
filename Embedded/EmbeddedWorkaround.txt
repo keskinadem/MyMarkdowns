@@ -1,0 +1,132 @@
+1) What is stack and heap? What is storage classes and linkage?
+Stack is used for static memory allocation and Heap for dynamic memory allocation, both stored in the computer's RAM.
+Element of the heap have no dependencies with each other and can always be accessed randomly at any time.
+
+Linkage describes how names can or can not refer to the same entity throughout the whole program or one single translation unit.
+
+2) How source code in C files manipulated and turned into binary file?
+
+Preprocessing    -- All C code is gathered together.
+Compilation      -- C source code is translated into assembly code.
+Assembly         -- Assembly code is translated into machine code.
+Linking          -- Object Files are combined.
+
+3) What is bootloader in Embedded Systems?
+Boot loader is to load an operating system from a storage device, set up a minimal environment in which the OS can run.
+
+4) What is the principle of RTOS?
+ Task management and scheduling;
+ (deferred) interrupt servicing;
+ Inter-process communication and synchronization;
+ Memory management.
+ 
+5) How an RTOS works?
+The RTOS is an operating system, it is a brain of the real-time system and its response to inputs immediately.
+In the RTOS, the task will be completed by the specified time and its responses in a predictable way to unpredictable events.
+
+6) What RTOSes you know?
+Wind River (VxWorks), ARM(Keil RTX)
+
+7) What is debugging and what you can achieve with it?
+Debugging means to run your code step by step in a debugging tool like Visual Studio,
+to find the exact point where you made a programming mistake.
+
+8) What practices can be used to test source code?
+Unit Testing, integration Testing, Code Review ...
+
+9) What is the volatile keyword and when it is used?
+prevent the compiler from applying any optimizations on objects that can change in ways that cannot be
+determined by the compiler.
+
+10) What is the static keyword and when it is used?
+In the C programming language, static is used with global variables and functions to set their scope to the containing file.
+In local variables, static is used to store the variable in the statically allocated memory instead of the automatically
+allocated memory.
+
+11) What is inline means and when it is used?
+Whose definitions are small and be substituted at the place where its function call is happened.
+
+
+12) What is pointer in C?
+A pointer is a variable whose value is the address of another variable
+
+13) Explain Function Pointers.
+#include <stdio.h>
+#include <stdio.h>
+#include <string.h>
+void foo(int a) {
+    printf(" %d ", a);
+}
+typedef void (*ptrFoo)(int);
+int main() {
+    // Write C code here
+    ptrFoo pF = foo;
+    pF(5);
+    return 0;
+}
+
+14) What is difference between a macro and a function?
+Macros are pre-processed which means that all the macros would be processed before your program compiles.
+However, functions are not preprocessed but compiled.
+
+15) What does stack mean and gow it is used?
+A stack is a linear data structure that serves as a collection of elements, with three main operations.
+Push operation, which adds an element to the stack.
+
+16) What is static and dynamic memory allocation?
+Static Memory Allocation: Static Memory is allocated for declared variables by the compiler.
+The memory is allocated during compile time. Dynamic Memory Allocation: Memory allocation done at the time of
+execution(run time) is known as dynamic memory allocation.
+
+17) What is memory leak?
+It is about dynamic memory allocation. When the memory block is forgatton to be freed after allocation, leakage happens.
+
+18) What does structure padding mean how to optimize memory usage?
+Adds the one or more empty bytes between the memory addresses to align the data in memory.
+
+19) What is translation unit?
+A translation unit is the output of the C preprocessor – a source file after it has been preprocessed.
+
+20) Provide pointer to array declaration.
+#include<stdio.h>
+
+void main()
+{
+   int a[3] = {1, 2, 3};
+   int *p = a;    
+   for (int i = 0; i < 3; i++)
+   {
+      printf("%d", *p);
+      p++;
+   }
+  return 0;
+}
+
+21) What is NULL pointer and what happens when dereferencing such pointer?
+A Null Pointer is a pointer that does not point to any memory location.
+In C, dereferencing a null pointer is undefined behavior.
+
+22) What is an ABI?
+Application Binary Interface
+An ABI defines how data structures or computational routines are accessed in machine code, which is a low-level, hardware-dependent format.
+
+23) What is a nested interrupt in ARM?
+In a nested interrupt system, an interrupt is allowed to anytime and anywhere even an ISR is being executed.
+But, only the highest priority ISR will be executed immediately.
+
+24) How many different stack pointers could you list which are present on ARM architecture?
+Physically there are two stack pointers in the Cortex-M processors, but only one of them is used at a time,
+depending on the current value of the CONTROL register and the state of the processor.
+
+25) What instruction sets ARM architecture implements?
+The Arm architecture supports three instruction sets: A64, A32 and T32.
+
+26) What is state machine concept?
+A state machine is a concept used in designing computer programs or digital logic.
+A state machine is any device storing the status of something at a given time.
+The status changes based on inputs, providing the resulting output for the implemented changes.
+
+State machine.
+
+
+

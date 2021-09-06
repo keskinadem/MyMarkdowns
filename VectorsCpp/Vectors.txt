@@ -1,0 +1,106 @@
+                                                       Vectors
+=================================================================================================================================
+Size is automaticalaaly changes.
+Needed libray: #include <vector>
+
+// Format
+// vector<DataType> nameOfVctorObj;
+
+// myVector.push_back(value);                                     ==>  adds an element to the end of the vector. (resize the array)
+// myVector.at(index);                                            ==>  returns element at specified index number.
+// myVector.size();                                               ==>  returns an unsigned int equal top th number of index.
+// myVector.begin();                                              ==>  reads vector from first element (index 0)
+// myVector.insert(myVector.begin + integer, newValue);           ==>  adds element BEFORE specified index number.
+// myVector.clear();                                              ==>  removes all elemets in vector.
+// myVector.empty();                                              ==>  returns boolean value if whether vector is empty.
+
+
+#include <iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+	vector<int> myVector;
+	myVector.push_back(185);
+	myVector.push_back(78);
+	myVector.push_back(595);
+
+	for (auto i = 0; i < myVector.size(); ++i) {
+		cout << myVector.at(i) << " ";  // myVector.at(i) == myVector[i]
+	}
+
+	cout << endl;
+	myVector.insert(myVector.begin() + 1, 111);  // before nth index
+
+	for (auto i = 0; i < myVector.size(); ++i) {
+		cout << myVector.at(i) << " ";
+	}
+
+	cout << endl;
+	myVector.erase(myVector.begin() + 2);
+
+	for (auto i = 0; i < myVector.size(); ++i) {
+		cout << myVector.at(i) << " ";
+	}
+
+	cout << endl;
+	if (myVector.empty() == true) {
+		cout << "vector is empty";
+	}
+	else {
+		cout << "vector is NOT empty";
+	}
+
+	myVector.clear();
+
+	cout << endl;
+	if (myVector.empty() == true) {
+		cout << "vector is empty";
+	}
+	else {
+		cout << "vector is NOT empty";
+	}
+	return 0;
+}
+
+
+#include <iostream>
+#include<vector>
+using namespace std;
+
+void fillVector(vector<int>&);
+void printVector(const  vector<int>&);
+void printReverseOfVector(const  vector<int>&);
+
+int main()
+{
+	vector<int> myVector;
+	fillVector(myVector);
+	printVector(myVector);
+	cout << endl;
+	printReverseOfVector(myVector);
+
+	return 0;
+}
+
+void fillVector(vector<int>& A) {
+
+	for (auto i = 0; i < 25; ++i) {
+		A.push_back(rand() % 10);
+	}
+}
+
+void printVector(const vector<int> &A) {
+
+	for (auto i = 0; i < A.size(); ++i) {
+		cout << A.at(i) << " ";
+	}
+}
+
+void printReverseOfVector(const  vector<int> &A) {
+
+	cout << "Reverse is: " << endl;
+	for (unsigned int i = A.size(); i > 0; i--) {
+		cout << A.at(i - 1) << " ";
+	}
+}
